@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
+import { AgenciaComponent } from './components/agencia/agencia.component';
 
 //Modules
 import {FormsModule} from '@angular/forms'
@@ -18,7 +19,8 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     AppComponent,
     AdminComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    AgenciaComponent
   ],
   imports: [
     BrowserModule,
