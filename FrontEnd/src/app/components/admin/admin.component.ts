@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { RestService } from 'src/app/services/rest.service';
 
 @Component({
@@ -10,7 +11,8 @@ export class AdminComponent implements OnInit {
   public listAgencias:any = []
 
   constructor(
-    private restService:RestService
+    private restService:RestService,
+    private router:Router
   ) { }
 
   ngOnInit(): void {
@@ -25,4 +27,7 @@ export class AdminComponent implements OnInit {
     });
   }
 
+  agenciaDetail(){
+      this.router.navigate(['agencia']);
+  }
 }
