@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #160a70;">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+          <a class="nav-link" routerLink="login" routerLinkActive="active">Login</a>
+          <a class="nav-link" routerLink="admin" routerLinkActive="active">Agencias</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <router-outlet></router-outlet>
+</div>
